@@ -41,10 +41,11 @@
 		}
 		if ($errors) {
 			showErrors($errors);
-			echo '<br/><a href="index.php"> volver al formulario</a>';		}
-		else{			
-			echo "Todo bien, pasamos a registrar ese usuario";
+			include 'formulario.php';
+		} else {
+			echo 'Todo bien, pasamos a registrar ese usuario';
 		}
 	} ?>
+
 </body>
 </html>
