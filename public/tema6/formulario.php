@@ -1,11 +1,11 @@
 <form action="<?= $_SERVER['PHP_SELF']?>" method="post">
 	<p>
 		<label for="name">Nombre</label>
-		<input type="text" name="name" value="<?= $_POST['name'] ?>"/>
+		<input type="text" name="name" value="<?= isset($_POST['name']) ?  $_POST['name'] : '' ?>"/>
 	</p>
 	<p>
 		<label for="email">Correo electrónico</label>
-		<input type="email" name="email" value="<?= $_POST['email'] ?>" />
+		<input type="email" name="email" value="<?= isset($_POST['email']) ?  $_POST['email'] : '' ?>" />
 	</p>
 	<p>
 		<label for="password">Introduzca su contraseña</label>
