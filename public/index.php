@@ -86,3 +86,4 @@
 </ol>
 
 <a href="tema6/index.php"> tema6</a>
+<a href="tema11/index.php"> tema11</a>
