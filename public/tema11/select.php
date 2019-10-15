@@ -12,10 +12,10 @@ class Select
 		public $opcion2;
 		public $opcion3; 
 		public function imprimete() {
-			$opcion1 = "<option value=$this->opcion1>$this->opcion1</option>";
-			$opcion2 = "<option value=$this->opcion2>$this->opcion2</option>";
-			$opcion3 ="<option value=$this->opcion3>$this->opcion3</option>";
-			echo "<select>".$opcion1.$opcion2.$opcion3."</select>";	
+			$opcion1 = '<option value='.$this->opcion1.'>'.$this->opcion1.'</option>';
+			$opcion2 = '<option value='.$this->opcion2.'>'.$this->opcion2.'</option>';
+			$opcion3 ='<option value='.$this->opcion3.'>'.$this->opcion3.'</option>';
+			echo '<select>'.$opcion1.$opcion2.$opcion3.'</select>';	
 		}
 
 	}

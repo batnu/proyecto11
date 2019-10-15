@@ -11,7 +11,7 @@ class Enlace
 		public $enunciado;
 		public $enlace; 
 		public function mostrar() {
-			echo "Este es un enlace a "."<a href=https://$this->enlace> $this->enunciado </a>";	
+			echo 'Este es un enlace a' .'<a href=https://'.$this->enlace.'>'. $this->enunciado .'</a>';	
 		}
 
 	}
