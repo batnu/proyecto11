@@ -8,23 +8,27 @@
 <?php
 class Enlace
 	{
-		public $enunciado;
-		public $enlace; 
+		private $enunciado;
+		private $enlace; 
+		
+		public function __construct($enunciado,$enlace){
+			$this->enunciado = $enunciado;
+			$this->enlace = $enlace;
+		}
+		
 		public function mostrar() {
-			echo 'Este es un enlace a' .'<a href=https://'.$this->enlace.'>'. $this->enunciado .'</a>';	
+			$salida = 'Este es un enlace a ' .'<a href=https://'.$this->enlace.'>'. $this->enunciado .'</a>';	
+			return $salida;
 		}
 
 	}
-	$google = new Enlace();
-	$google->enunciado =" Google";
-	$google->enlace="www.google.es";	
-	$google->mostrar();
+	$google = new Enlace("Google","www.google.es");
+	echo $google->mostrar();
 	echo "<br/>";
-	$google = new Enlace();
-	$google->enunciado =" Marca";
-	$google->enlace="www.marca.com";	
-	$google->mostrar();
-?>
+	$google = new Enlace("Marca","www.marca.com");
+	echo $google->mostrar();
+	
+	?>
 </body>
 </html>
 
